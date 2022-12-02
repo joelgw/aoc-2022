@@ -10,8 +10,7 @@ $rps | ForEach-Object -Process {
 
     if ($outcome -eq 21 -Or $outcome -eq 24) 
     # Win
-    {$running_score += ([int]([char]$game[2])) - 81
-    } 
+    {$running_score += ([int]([char]$game[2])) - 81} 
     # Draw
     elseif ($outcome -eq 23) 
     {$running_score += ([int]([char]$game[2])) - 84}
